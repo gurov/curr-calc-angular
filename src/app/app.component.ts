@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartItem } from './models';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'curr-calc-angular';
+
+  selectedCart: CartItem[] = [
+    { price: 20 },
+    { price: 45 },
+    { price: 67 },
+    { price: 1305 }
+  ];
+
 }
